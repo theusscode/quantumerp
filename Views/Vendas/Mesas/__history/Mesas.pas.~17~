@@ -1,0 +1,75 @@
+unit Mesas;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
+  FMX.Controls.Presentation, FMX.StdCtrls, FMX.Objects;
+
+type
+  TForm_vdmesas = class(TForm)
+    Panel1: TPanel;
+    pnl_left: TPanel;
+    Pnl_client: TPanel;
+    rec_client: TRectangle;
+    rec_left: TRectangle;
+    StyleBook1: TStyleBook;
+    relatorios: TRectangle;
+    Rec_contas: TRectangle;
+    rec_servicos: TRectangle;
+    rec_pedido: TRectangle;
+    rec_parcial: TRectangle;
+    rec_concluir: TRectangle;
+    Rectangle6: TRectangle;
+    Rectangle7: TRectangle;
+    rec_service: TRectangle;
+    rec_top: TRectangle;
+    rec_bottom: TRectangle;
+    Panel2: TPanel;
+    rec_comisao: TRectangle;
+    rec_desconto: TRectangle;
+    Rectangle3: TRectangle;
+    rec_juntar: TRectangle;
+    rec_desagrupar: TRectangle;
+    rec_alterar: TRectangle;
+    SpeedButton1: TSpeedButton;
+    SpeedButton2: TSpeedButton;
+    SpeedButton3: TSpeedButton;
+    SpeedButton4: TSpeedButton;
+    SpeedButton5: TSpeedButton;
+    SpeedButton6: TSpeedButton;
+    SpeedButton7: TSpeedButton;
+    SpeedButton9: TSpeedButton;
+    SpeedButton10: TSpeedButton;
+    SpeedButton11: TSpeedButton;
+    btn_addpedido: TSpeedButton;
+    procedure rec_pedidoMouseEnter(Sender: TObject);
+    procedure btn_addpedidoMouseLeave(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form_vdmesas: TForm_vdmesas;
+
+implementation
+
+{$R *.fmx}
+
+
+procedure TForm_vdmesas.btn_addpedidoMouseLeave(Sender: TObject);
+begin
+      // Volta a cor do retângulo para azul ao retirar o mouse
+  rec_pedido.Fill.Color := $FF43FA3D; // Cor azul
+end;
+
+procedure TForm_vdmesas.rec_pedidoMouseEnter(Sender: TObject);
+begin
+  // Muda a cor do retângulo para verde ao passar o mouse sobre ele
+  rec_pedido.Fill.Color := $FF0098ED; // Cor verde
+end;
+
+end.

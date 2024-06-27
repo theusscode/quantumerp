@@ -1,0 +1,14 @@
+program Systema;
+
+uses
+  System.StartUpCopy,
+  FMX.Forms,
+  Unit1princinpal in 'Unit1princinpal.pas' {Z};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TZ, Z);
+  Application.Run;
+end.

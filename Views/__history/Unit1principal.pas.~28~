@@ -1,0 +1,275 @@
+unit Unit1principal;
+
+interface
+
+uses
+  System.SysUtils,
+  System.Types,
+  System.UITypes,
+  System.Classes,
+  System.Variants,
+  FMX.Types,
+  FMX.Controls,
+  FMX.Forms,
+  FMX.Graphics,
+  FMX.Dialogs,
+  FMX.Controls.Presentation,
+  FMX.StdCtrls,
+  FMX.Menus,
+  FMX.MultiView,
+  FMX.Objects;
+
+type
+  TSysform_principal = class(TForm)
+    Panel_top: TPanel;
+    StyleBook1: TStyleBook;
+    Panel_subtop: TPanel;
+    Menutop: TMenuBar;
+    Menu_home: TMenuItem;
+    Menu_financeiro: TMenuItem;
+    Menu_stree: TMenuItem;
+    Menu_vendas: TMenuItem;
+    Menu_relatorios: TMenuItem;
+    Menu_cadastro: TMenuItem;
+    Menu_config: TMenuItem;
+    Menu_ajuda: TMenuItem;
+    MultiView1: TMultiView;
+    RecFundo: TRectangle;
+    Buttom_master: TSpeedButton;
+    Image_master: TImage;
+    Text_master: TText;
+    Button_balcao: TSpeedButton;
+    Image_balçao: TImage;
+    Text_VendaBalção: TText;
+    Button_pdv: TSpeedButton;
+    Image_pdv: TImage;
+    Text_pdv: TText;
+    Button_comandas: TSpeedButton;
+    Image_comanda: TImage;
+    Text_comandas: TText;
+    Button_entregas: TSpeedButton;
+    Image1: TImage;
+    Text_Entregas: TText;
+    Button_flpedidos: TSpeedButton;
+    Image_flpedidos: TImage;
+    Text_flpedidos: TText;
+    Button_contaspagar: TSpeedButton;
+    Image_ct_pagar: TImage;
+    Text_ct_pagar: TText;
+    Button_cd_contas: TSpeedButton;
+    Image_cd_contas: TImage;
+    Text_cd_contas: TText;
+    Button_cd_produtos: TSpeedButton;
+    Image_cd_produtos: TImage;
+    Text_cd_produtos: TText;
+    Button_estoque: TSpeedButton;
+    Image_estoque: TImage;
+    Text_Estoque: TText;
+    Button_relatorio: TSpeedButton;
+    Image_rlmovimentaçao: TImage;
+    Text_rlmovimentaçao: TText;
+    Button_rl_pedidos: TSpeedButton;
+    Image_rl_pedidos: TImage;
+    Text_rlpedidos: TText;
+    Button_mesa: TSpeedButton;
+    Image_mesa: TImage;
+    Text_Mesas: TText;
+    logo: TText;
+    home_login: TMenuItem;
+    home_fechar: TMenuItem;
+    home_restaurar: TMenuItem;
+    home_backup: TMenuItem;
+    financeiro_inserirdinheiro: TMenuItem;
+    financeiro_retirardinheiro: TMenuItem;
+    financeiro_transfe: TMenuItem;
+    home_logout: TMenuItem;
+    financeiro_receitas: TMenuItem;
+    financeiro_select_caixa: TMenuItem;
+    financeiro_open_caixa: TMenuItem;
+    financeiro_close_caixa: TMenuItem;
+    venda_mesas: TMenuItem;
+    venda_comandas: TMenuItem;
+    vendas_balçao: TMenuItem;
+    vendas_entrega: TMenuItem;
+    venda_pvd: TMenuItem;
+    venda_filapd: TMenuItem;
+    relatorios_vendas: TMenuItem;
+    rel_pedidos: TMenuItem;
+    relatorios_vendaprodutos: TMenuItem;
+    relatorios_vendedor: TMenuItem;
+    relatorio_clientes: TMenuItem;
+    Relatorios_periodo: TMenuItem;
+    rel_movcaixa: TMenuItem;
+    rel_contas: TMenuItem;
+    rel_balançocontas: TMenuItem;
+    rel_fluxocaixa: TMenuItem;
+    rel_entregador: TMenuItem;
+    rel_compraprodutos: TMenuItem;
+    rel_funcionarios: TMenuItem;
+    rel_clientes: TMenuItem;
+    rel_deprodutos: TMenuItem;
+    cad_prod: TMenuItem;
+    cad_estoque: TMenuItem;
+    cad_fornecedores: TMenuItem;
+    cad_clientes: TMenuItem;
+    cad_mesas: TMenuItem;
+    cad_comandas: TMenuItem;
+    cad_funcionarios: TMenuItem;
+    cad_funçao: TMenuItem;
+    cad_caixa: TMenuItem;
+    cad_conta: TMenuItem;
+    cad_serviço: TMenuItem;
+    cad_creditos: TMenuItem;
+    cad_formpagamento: TMenuItem;
+    cad_cartoes: TMenuItem;
+    cad_carteiras: TMenuItem;
+    ajuda_doc: TMenuItem;
+    ajuda_suporte: TMenuItem;
+    ajuda_registro: TMenuItem;
+    ajuda_sobre: TMenuItem;
+    conf_impressoras: TMenuItem;
+    conf_conputador: TMenuItem;
+    conf_meuip: TMenuItem;
+    conf_auditoria: TMenuItem;
+    streen_telacreia: TMenuItem;
+    streen_medios: TMenuItem;
+    streen_grandes: TMenuItem;
+    procedure MultiView1StartHiding(Sender: TObject);
+    procedure OutroManipuladorDeEvento(Sender: TObject);
+    procedure MultiView1StartShowing(Sender: TObject);
+    procedure home_logoutClick(Sender: TObject);
+    procedure Button_pdvClick(Sender: TObject);
+    procedure venda_pvdClick(Sender: TObject);
+    procedure financeiro_open_caixaClick(Sender: TObject);
+    procedure financeiro_close_caixaClick(Sender: TObject);
+    procedure financeiro_inserirdinheiroClick(Sender: TObject);
+    procedure financeiro_retirardinheiroClick(Sender: TObject);
+    procedure financeiro_transfeClick(Sender: TObject);
+    procedure cad_prodClick(Sender: TObject);
+
+
+  private
+    { Private declarations }
+
+  public
+    { Public declarations }
+  end;
+
+var
+  Sysform_principal: TSysform_principal;
+
+implementation
+
+{$R *.fmx}
+
+uses
+ Unitpvd,
+ Unit1princinpal,
+ Unit_login_pdv,
+ Unit_abrirCaixa,
+ Closecaixa,
+ Inserir_dinheiro,
+ UnitRetiracash,
+ TransferirCash,
+ uMain,
+ Comandas;
+
+procedure TSysform_principal.Button_pdvClick(Sender: TObject);
+begin
+    // Verifica se o formulário já foi criado
+  if not Assigned(Form_pdv) then
+    Application.CreateForm(TForm_pdv, Form_pdv);
+  // Mostra o formulário
+  Form_pdv.Show;
+end;
+
+
+procedure TSysform_principal.cad_prodClick(Sender: TObject);
+begin
+// Verifica se o formulário já foi criado
+  if not Assigned(cad01) then
+    Application.CreateForm(Tcad01, cad01);
+  // Mostra o formulário
+  cad01.Show;
+
+end;
+
+procedure TSysform_principal.financeiro_close_caixaClick(Sender: TObject);
+begin
+  // Verifica se o formulário já foi criado
+  if not Assigned(Close_Caixa) then
+    Application.CreateForm(tClose_Caixa, Close_Caixa);
+  // Mostra o formulário
+  Close_caixa.Show;
+end;
+
+procedure TSysform_principal.financeiro_inserirdinheiroClick(Sender: TObject);
+begin
+   // Verifica se o formulário já foi criado
+  if not Assigned(Form_inserirCash) then
+    Application.CreateForm(TForm_inserirCash, Form_inserirCash);
+  // Mostra o formulário
+  Form_inserirCash.Show;
+
+end;
+
+procedure TSysform_principal.financeiro_open_caixaClick(Sender: TObject);
+begin
+  // Verifica se o formulário já foi criado
+  if not Assigned(Form_AbrirCaixa) then
+    Application.CreateForm(TForm_AbrirCaixa, Form_AbrirCaixa);
+  // Mostra o formulário
+  Form_AbrirCaixa.Show;
+end;
+
+procedure TSysform_principal.financeiro_retirardinheiroClick(Sender: TObject);
+begin
+  // Verifica se o formulário já foi criado  Form_Retiracash
+  if not Assigned(Form_Retiracash) then
+    Application.CreateForm(TForm_Retiracash, Form_Retiracash);
+  // Mostra o formulário Form_Retiracash
+  Form_Retiracash.Show;
+end;
+
+procedure TSysform_principal.financeiro_transfeClick(Sender: TObject);
+begin
+  // Verifica se o formulário já foi criado  Transferir_cash
+  if not Assigned(Transferir_cash) then
+    Application.CreateForm(TTransferir_cash,Transferir_cash );
+  // Mostra o formulário Form_Retiracash
+  Transferir_cash.Show;
+
+end;
+
+procedure TSysform_principal.home_logoutClick(Sender: TObject);
+begin
+ Application.Terminate;
+end;
+
+procedure TSysform_principal.MultiView1StartHiding(Sender: TObject);
+begin
+  RecFundo.Visible := false;
+end;
+
+procedure TSysform_principal.MultiView1StartShowing(Sender: TObject);
+begin
+  RecFundo.Visible := true;
+end;
+
+procedure TSysform_principal.OutroManipuladorDeEvento(Sender: TObject);
+begin
+  // Implementação para outro manipulador de evento
+end;
+
+procedure TSysform_principal.venda_pvdClick(Sender: TObject);
+begin
+
+  // Verifica se o formulário já foi criado
+  if not Assigned(Form_pdv) then
+    Application.CreateForm(TForm_pdv, Form_pdv);
+  // Mostra o formulário
+  Form_pdv.Show;
+end;
+
+end.
+

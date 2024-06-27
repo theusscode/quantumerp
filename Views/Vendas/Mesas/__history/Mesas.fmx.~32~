@@ -1,0 +1,529 @@
+object Form_vdmesas: TForm_vdmesas
+  Left = 0
+  Top = 0
+  ClientHeight = 710
+  ClientWidth = 1021
+  StyleBook = StyleBook1
+  WindowState = wsMinimized
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Panel1: TPanel
+    Align = Client
+    Size.Width = 784.000000000000000000
+    Size.Height = 710.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'Panel1Style1'
+    TabOrder = 0
+    object pnl_left: TPanel
+      Align = Left
+      Padding.Left = 2.000000000000000000
+      Padding.Top = 2.000000000000000000
+      Padding.Right = 2.000000000000000000
+      Padding.Bottom = 2.000000000000000000
+      Size.Width = 233.000000000000000000
+      Size.Height = 710.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'pnl_leftStyle1'
+      TabOrder = 2
+      object rec_left: TRectangle
+        Align = Client
+        Fill.Color = claWhite
+        Padding.Left = 3.000000000000000000
+        Padding.Top = 3.000000000000000000
+        Padding.Right = 3.000000000000000000
+        Padding.Bottom = 2.000000000000000000
+        Margins.Top = 3.000000000000000000
+        Size.Width = 229.000000000000000000
+        Size.Height = 703.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = xFF0098ED
+        object relatorios: TRectangle
+          Align = Top
+          Fill.Color = claWhite
+          Margins.Top = 3.000000000000000000
+          Position.X = 3.000000000000000000
+          Position.Y = 189.000000000000000000
+          Size.Width = 223.000000000000000000
+          Size.Height = 94.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          object Rectangle6: TRectangle
+            Align = Left
+            Fill.Kind = None
+            Margins.Top = 3.000000000000000000
+            Margins.Right = 3.000000000000000000
+            Position.Y = 3.000000000000000000
+            Size.Width = 105.000000000000000000
+            Size.Height = 91.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = xFF0098ED
+            object Btn_preparar: TSpeedButton
+              Align = Client
+              Size.Width = 105.000000000000000000
+              Size.Height = 91.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object Image10: TImage
+              MultiResBitmap = <
+                item
+                end>
+              Align = Center
+              Size.Width = 63.000000000000000000
+              Size.Height = 66.000000000000000000
+              Size.PlatformDefault = False
+            end
+          end
+          object Rectangle7: TRectangle
+            Align = Right
+            Fill.Kind = None
+            Margins.Left = 3.000000000000000000
+            Margins.Top = 3.000000000000000000
+            Position.X = 120.000000000000000000
+            Position.Y = 3.000000000000000000
+            Size.Width = 103.000000000000000000
+            Size.Height = 91.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = xFF0098ED
+            object Btn_conta: TSpeedButton
+              Align = Client
+              Size.Width = 103.000000000000000000
+              Size.Height = 91.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object Image11: TImage
+              MultiResBitmap = <
+                item
+                end>
+              Align = Center
+              Size.Width = 63.000000000000000000
+              Size.Height = 66.000000000000000000
+              Size.PlatformDefault = False
+            end
+          end
+        end
+        object Rec_contas: TRectangle
+          Align = Top
+          Fill.Color = claWhite
+          Margins.Top = 3.000000000000000000
+          Position.X = 3.000000000000000000
+          Position.Y = 92.000000000000000000
+          Size.Width = 223.000000000000000000
+          Size.Height = 94.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          object rec_parcial: TRectangle
+            Align = Left
+            Fill.Kind = None
+            Margins.Top = 3.000000000000000000
+            Margins.Right = 3.000000000000000000
+            Position.Y = 3.000000000000000000
+            Size.Width = 105.000000000000000000
+            Size.Height = 91.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = xFF0098ED
+            object Btn_parcial: TSpeedButton
+              Align = Client
+              Size.Width = 105.000000000000000000
+              Size.Height = 91.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object Image2: TImage
+              MultiResBitmap = <
+                item
+                end>
+              Align = Center
+              Size.Width = 63.000000000000000000
+              Size.Height = 66.000000000000000000
+              Size.PlatformDefault = False
+            end
+          end
+          object rec_concluir: TRectangle
+            Align = Right
+            Fill.Kind = None
+            Margins.Left = 3.000000000000000000
+            Margins.Top = 3.000000000000000000
+            Position.X = 120.000000000000000000
+            Position.Y = 3.000000000000000000
+            Size.Width = 103.000000000000000000
+            Size.Height = 91.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = xFF0098ED
+            object Btn_concluir: TSpeedButton
+              Align = Client
+              Size.Width = 103.000000000000000000
+              Size.Height = 91.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object Image1: TImage
+              MultiResBitmap = <
+                item
+                end>
+              Align = Center
+              Size.Width = 63.000000000000000000
+              Size.Height = 66.000000000000000000
+              Size.PlatformDefault = False
+            end
+          end
+        end
+        object rec_servicos: TRectangle
+          Align = Top
+          Fill.Color = claWhite
+          Margins.Top = 5.000000000000000000
+          Position.X = 3.000000000000000000
+          Position.Y = 288.000000000000000000
+          Size.Width = 223.000000000000000000
+          Size.Height = 67.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          object rec_service: TRectangle
+            Align = Center
+            Fill.Kind = None
+            Margins.Left = 3.000000000000000000
+            Size.Width = 70.000000000000000000
+            Size.Height = 67.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = xFF0098ED
+            object Btn_servicos: TSpeedButton
+              Align = Client
+              Size.Width = 70.000000000000000000
+              Size.Height = 67.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object Image8: TImage
+              MultiResBitmap = <
+                item
+                end>
+              Align = Center
+            end
+          end
+          object rec_comisao: TRectangle
+            Align = Right
+            Fill.Kind = None
+            Margins.Left = 3.000000000000000000
+            Position.X = 153.000000000000000000
+            Size.Width = 70.000000000000000000
+            Size.Height = 67.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = xFF0098ED
+            object Btn_comisao: TSpeedButton
+              Align = Client
+              Size.Width = 70.000000000000000000
+              Size.Height = 67.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object Image4: TImage
+              MultiResBitmap = <
+                item
+                end>
+              Align = Center
+            end
+          end
+          object rec_desconto: TRectangle
+            Align = Left
+            Fill.Kind = None
+            Margins.Left = 3.000000000000000000
+            Position.X = 3.000000000000000000
+            Size.Width = 70.000000000000000000
+            Size.Height = 67.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = xFF0098ED
+            object Btn_desconto: TSpeedButton
+              Align = Client
+              Size.Width = 70.000000000000000000
+              Size.Height = 67.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object Image9: TImage
+              MultiResBitmap = <
+                item
+                end>
+              Align = Center
+            end
+          end
+        end
+        object rec_pedido: TRectangle
+          Align = Top
+          Fill.Kind = None
+          Position.X = 3.000000000000000000
+          Position.Y = 3.000000000000000000
+          Size.Width = 223.000000000000000000
+          Size.Height = 86.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFF0098ED
+          OnMouseEnter = rec_pedidoMouseEnter
+          object btn_addpedido: TSpeedButton
+            Align = Client
+            Size.Width = 223.000000000000000000
+            Size.Height = 86.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'SpeedButton8Style1'
+            OnMouseLeave = btn_addpedidoMouseLeave
+          end
+          object Image3: TImage
+            MultiResBitmap.Height = 48
+            MultiResBitmap.Width = 48
+            MultiResBitmap = <
+              item
+                Width = 48
+                Height = 48
+                PNG = {
+                  89504E470D0A1A0A0000000D49484452000000300000003008060000005702F9
+                  87000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                  01AE494441546843ED988B4DC3301040030BC0086C00237403D80498806E0223
+                  940DD800D8800D6003B827C5A8B22EBE8B3F351F3FE92995EAF8629FE34FA6C1
+                  603018FC6B8EE66B2DAEC44BF14C3C152F4478113FC43771273E8A3F061EF65E
+                  7C173F9D52967B686457B6E29A078FE5DE3BF1E0D073CFA2F6503952D7C1B2C1
+                  B82EE9F525A933BC33CDA0975A3C7C90BA9B65A2F6B05992184DE085D502B690
+                  585561AACC193ACCFFA8FD97B2FA507A10B540296FC400BFB5322989590D5651
+                  2D48CA18AD4C4AB25005B6075A00CB18AD8C25B1931CCFD71466250DD9CCD745
+                  3C0DE005EE85B9B0791AE0990D6E4576B6FBC6C4FF738FC5C97C2D421B9BFB32
+                  4DE6E29962937832606106E98DA797AEC5B578D68692EC7EF3246A955BC66865
+                  2C899DC433843806F6C2CC80A7019C617B6166C04B8FAD04314DBCB3504E16E2
+                  CDDC5AAA669EC52C270B1C4E720E41C4AA7E32FBD5079A80674D28B5CADCBF44
+                  EE50F2DA64E8C4B0436CD108EA6CFE5925402FD51C4ED4D5BCE73578D94AB2C1
+                  BDCD5E582FF41C07F0350DA12CF714F7BA76F02881E32786CFEBE722BC8A3C34
+                  4385ED41CFEDC96030180CFE0CD3F40533AB199A0BF4D4ED0000000049454E44
+                  AE426082}
+                FileName = 'F:\Allsystem\Views\icons\Plus.png'
+              end>
+            Margins.Top = 5.000000000000000000
+            Position.X = 91.000000000000000000
+            Position.Y = 36.000000000000000000
+            Size.Width = 41.000000000000000000
+            Size.Height = 39.000000000000000000
+            Size.PlatformDefault = False
+          end
+          object Image12: TImage
+            MultiResBitmap.Height = 48
+            MultiResBitmap.Width = 48
+            MultiResBitmap = <
+              item
+                Width = 48
+                Height = 48
+                PNG = {
+                  89504E470D0A1A0A0000000D49484452000000300000003008060000005702F9
+                  87000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                  018D494441546843ED998D4DC4300C460B2CC006B0016C0023B0018CC006C006
+                  8C001BB00130018CC006B001F829B1145515BD38B9F8A4F3933E256A9B1F27AE
+                  EBDC4D41B0E71CE4D2C28DE824559BF9123DA7EA1898FC6F67D1673587B9ACE5
+                  34973D31F56975A17BD15DAA4EEFA2B754ADE6527491AAD383887E87C040BAF5
+                  2D8336F76375A19D210CF0260CF0A64718E52B8A2C10FB35FEBB85D15EDACF30
+                  DAC38548C29E52B51AF29FEB541DEB425722DD7A6B1A01B4D57EE87318BC783A
+                  303A16D5429BB28F6D2488FF42E4D1C12D5B5F06824F2E8CA63C137C8BCE459B
+                  C2B3B4D1F6A6B3400F58B95A23E69377597D85C9FC884A23884E4BEF04D7B8A7
+                  CF22DA0EF7FD397323541FA2D72CEAF3FBB4D964C786C02A9621714D3CEBBEF2
+                  4B10CB5F444B9346DC1B1AEF5BE0EBAC13B77EA957D9662E5466A8D66C759538
+                  D0781306781306781306781306787394CB56C82CCF72A9E2B77F4D97492534F7
+                  57F18B08D7DC61A265C65923DA36D1C3855A0E25CD079A967F29158E8A8F22DC
+                  A206DCEA56B4136E1404810BD3F407E82BA545071AA4CA0000000049454E44AE
+                  426082}
+                FileName = 'F:\Allsystem\Views\icons\Wine Glass.png'
+              end>
+            Position.X = 113.000000000000000000
+            Position.Y = 17.000000000000000000
+            Size.Width = 35.000000000000000000
+            Size.Height = 36.000000000000000000
+            Size.PlatformDefault = False
+          end
+          object Image13: TImage
+            MultiResBitmap.Height = 48
+            MultiResBitmap.Width = 48
+            MultiResBitmap = <
+              item
+                Width = 48
+                Height = 48
+                PNG = {
+                  89504E470D0A1A0A0000000D49484452000000300000003008060000005702F9
+                  87000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                  0309494441546843ED988D6DD44010854F544009944007D001749074001D4007
+                  D0017400A92074001D4007400561BEE4467A7A99B5F7ECB3CF487ED2532EB7F6
+                  EEFCBC999DE4B063C736F1FCC8FF0ED7C1DFC13BE16DF05D70F30EBD0CAAE115
+                  7F063F049F053787EFC134F4D7916ABC93CCE0F4264044D5B8A741C0F7AF839F
+                  837F82FA4C12472E9E918FC13408635BC099AF417520F9267831A0ED340423C7
+                  40C471541D806423B3B71AAAE2EDED3CACFF08EABBD4D2AA4E549154F6749EF7
+                  417D675527B4EF7F93CF15873A0F77883FBB38F450DA660269BC0DBA3C921857
+                  C9CB9D20338B423B4AEB30A4C35AD546ABCEE3725AEC0647A37AD0582FE7F9CA
+                  914F4187666E312969BA39D081C1AF827423229D91C45197167253F08CAE2F72
+                  63EBE880330A7EF7A10E124D1C83DEBD3C837A399E3D0B1E210C4A78213AB545
+                  0E498567F4BDB3D682161A859CE0508D3C9D8948FAF890053F2615CDD2D08872
+                  325AA383461FE33533E83CD7C842428DD46000A29E6B04E62CD04DE9280ACD4C
+                  4639E192487816BC16742C7F54CC4F8E3F4F81760C8F983AE486E8EF7F8F3F01
+                  06DE3C7CBC870F837A46CFA0380AD5B84744B303699F449EEFB56BB9E318966B
+                  C853A16B8C2AB3A09BE9E8A0189B8760D551F482D36CB5A43709DA4DE82E1538
+                  B0350341BF33125ACC7EB1691D54CE77C123E11A57F02C459C8E105D9C1FBA51
+                  5B52612FED7A936F656D91D5E830171E20C6902FF69D77BD93C04D991B798AC1
+                  8B20730FE4F0A10CB530243DD892DF28304637225A0952AF29563269EAB315D8
+                  1BA75B7B401C9B2C1DA0B7A8B640BDB85AA47D7A36708A16ABADD549E1D228A6
+                  64F211343A99462D3A98858A53DE4A7374B80ABAAE95EC41379A156D476B7450
+                  A730D8A58211B93E461C27208BA0FAA7951A87536E3C69E73F11D5DF0449744D
+                  36C76A6436AAD141B59F4EF5EA9A77CFA2EB1EB446077580F6DAA3EBC937E81C
+                  E8F5AEA303F250232BF2EE62BAEE01925083D02B860FF56B8A79155DF700432A
+                  239D488B7B62355DF742274F27BA465217D1752F2AA32FAEEB53909D864C6C46
+                  D73B76ECD8B1251C0EFF00D630FA9A8569E2AE0000000049454E44AE426082}
+                FileName = 'F:\Allsystem\Views\icons\Pizza.png'
+              end>
+            Position.X = 72.000000000000000000
+            Position.Y = 15.000000000000000000
+            Size.Width = 36.000000000000000000
+            Size.Height = 42.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object Rectangle3: TRectangle
+          Align = Top
+          Fill.Color = claWhite
+          Margins.Top = 5.000000000000000000
+          Position.X = 3.000000000000000000
+          Position.Y = 360.000000000000000000
+          Size.Width = 223.000000000000000000
+          Size.Height = 67.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          object rec_juntar: TRectangle
+            Align = Center
+            Fill.Kind = None
+            Margins.Left = 3.000000000000000000
+            Size.Width = 70.000000000000000000
+            Size.Height = 67.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = xFF0098ED
+            object Btn_juntar: TSpeedButton
+              Align = Client
+              Size.Width = 70.000000000000000000
+              Size.Height = 67.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object Image5: TImage
+              MultiResBitmap = <
+                item
+                end>
+              Align = Center
+            end
+          end
+          object rec_desagrupar: TRectangle
+            Align = Right
+            Fill.Kind = None
+            Margins.Left = 3.000000000000000000
+            Position.X = 153.000000000000000000
+            Size.Width = 70.000000000000000000
+            Size.Height = 67.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = xFF0098ED
+            object Btn_desagrupar: TSpeedButton
+              Align = Client
+              Size.Width = 70.000000000000000000
+              Size.Height = 67.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object Image6: TImage
+              MultiResBitmap = <
+                item
+                end>
+              Align = Center
+            end
+          end
+          object rec_alterar: TRectangle
+            Align = Left
+            Fill.Kind = None
+            Margins.Left = 3.000000000000000000
+            Position.X = 3.000000000000000000
+            Size.Width = 70.000000000000000000
+            Size.Height = 67.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = xFF0098ED
+            object Btn_alterar: TSpeedButton
+              Align = Client
+              Size.Width = 70.000000000000000000
+              Size.Height = 67.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object Image7: TImage
+              MultiResBitmap = <
+                item
+                end>
+              Align = Center
+            end
+          end
+        end
+      end
+    end
+    object Pnl_client: TPanel
+      Align = Client
+      Padding.Left = 2.000000000000000000
+      Padding.Top = 2.000000000000000000
+      Padding.Right = 2.000000000000000000
+      Padding.Bottom = 2.000000000000000000
+      Size.Width = 551.000000000000000000
+      Size.Height = 710.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'Pnl_clientStyle1'
+      TabOrder = 0
+      object rec_client: TRectangle
+        Align = Client
+        Fill.Color = claWhite
+        Margins.Right = 3.000000000000000000
+        Size.Width = 544.000000000000000000
+        Size.Height = 706.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        object rec_top: TRectangle
+          Fill.Kind = None
+          Size.Width = 544.000000000000000000
+          Size.Height = 409.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFF0098ED
+        end
+        object rec_bottom: TRectangle
+          Align = Bottom
+          Fill.Kind = None
+          Position.Y = 416.000000000000000000
+          Size.Width = 544.000000000000000000
+          Size.Height = 290.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFF0098ED
+        end
+      end
+    end
+  end
+  object Panel2: TPanel
+    Align = Right
+    Position.X = 784.000000000000000000
+    Size.Width = 237.000000000000000000
+    Size.Height = 710.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+  end
+  object StyleBook1: TStyleBook
+    Styles = <
+      item
+      end
+      item
+        Platform = 'Windows 10 Desktop'
+        ResourcesBin = {
+          464D585F5354594C4520322E3501060C50616E656C315374796C653103B40006
+          10506E6C5F636C69656E745374796C653103B800060E706E6C5F6C6566745374
+          796C653103B60000545046300A5452656374616E676C6500095374796C654E61
+          6D65060C50616E656C315374796C653105416C69676E070643656E7465720A46
+          696C6C2E436F6C6F720708636C6157686974650748697454657374080A53697A
+          652E57696474680500000000000040FF08400B53697A652E4865696768740500
+          000000000080B108401453697A652E506C6174666F726D44656661756C74080B
+          5374726F6B652E4B696E6407044E6F6E650756697369626C6508000054504630
+          0A5452656374616E676C6500095374796C654E616D650610506E6C5F636C6965
+          6E745374796C653105416C69676E070643656E7465720A46696C6C2E436F6C6F
+          720708636C6157686974650748697454657374080A53697A652E576964746805
+          00000000000000BD08400B53697A652E4865696768740500000000000080B108
+          401453697A652E506C6174666F726D44656661756C74080B5374726F6B652E4B
+          696E6407044E6F6E650756697369626C65080000545046300A5452656374616E
+          676C6500095374796C654E616D65060E706E6C5F6C6566745374796C65310541
+          6C69676E070643656E7465720A46696C6C2E436F6C6F720708636C6157686974
+          650748697454657374080A53697A652E57696474680500000000000080840740
+          0B53697A652E4865696768740500000000000080B108401453697A652E506C61
+          74666F726D44656661756C74080B5374726F6B652E4B696E6407044E6F6E6507
+          56697369626C65080000}
+      end>
+    Left = 600
+    Top = 40
+  end
+end

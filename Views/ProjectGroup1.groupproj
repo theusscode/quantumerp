@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{60FB176B-D831-49C1-8636-45A30B0BF728}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Systema.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Financeiro\Retirar_Dinheiro\Retirar_cash.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Systema">
+        <MSBuild Projects="Systema.dproj"/>
+    </Target>
+    <Target Name="Systema:Clean">
+        <MSBuild Projects="Systema.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Systema:Make">
+        <MSBuild Projects="Systema.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Retirar_cash">
+        <MSBuild Projects="Financeiro\Retirar_Dinheiro\Retirar_cash.dproj"/>
+    </Target>
+    <Target Name="Retirar_cash:Clean">
+        <MSBuild Projects="Financeiro\Retirar_Dinheiro\Retirar_cash.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Retirar_cash:Make">
+        <MSBuild Projects="Financeiro\Retirar_Dinheiro\Retirar_cash.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Systema;Retirar_cash"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Systema:Clean;Retirar_cash:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Systema:Make;Retirar_cash:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

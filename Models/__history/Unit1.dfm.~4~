@@ -1,0 +1,23 @@
+object UDM: TUDM
+  OldCreateOrder = False
+  Height = 431
+  Width = 703
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      'User_Name=root'
+      'Password=*qazwsx*'
+      'DriverID=MySQL')
+    Left = 104
+    Top = 48
+  end
+  object FDQuery1: TFDQuery
+    Connection = FDConnection1
+    Left = 200
+    Top = 48
+  end
+  object DataSource1: TDataSource
+    DataSet = FDQuery1
+    Left = 304
+    Top = 56
+  end
+end

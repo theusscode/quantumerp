@@ -1,0 +1,17 @@
+program Systema;
+
+uses
+  System.StartUpCopy,
+  FMX.Forms,
+  Unit1principal in 'Unit1principal.pas' {form_principal},
+  Unitpvd in 'Views\menu\Unitpvd.pas' {Form_pdv},
+  Controller in 'Controllers\Controller.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(Tform_principal, form_principal);
+  Application.CreateForm(TForm_pdv, Form_pdv);
+  Application.Run;
+end.

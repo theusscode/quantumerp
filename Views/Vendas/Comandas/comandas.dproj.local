@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/04/23 14:00:29.000.053,=C:\Users\mts_sc\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/04/28 14:25:58.000.008,=C:\Users\mts_sc\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/06/10 11:47:52.000.550,=C:\Users\mts_sc\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/06/25 09:30:41.534,=C:\Users\mts_sc\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/06/25 09:31:40.277,C:\Users\mts_sc\Documents\Embarcadero\Studio\Projects\Vd_comandas.pas=C:\Users\mts_sc\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/06/25 09:31:40.277,C:\Users\mts_sc\Documents\Embarcadero\Studio\Projects\Vd_comandas.fmx=C:\Users\mts_sc\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2024/06/25 09:32:09.266,F:\Allsystem\Views\Vendas\Comandas\Vd_comandas.pas=C:\Users\mts_sc\Documents\Embarcadero\Studio\Projects\Vd_comandas.pas</Transaction>
+    <Transaction>2024/06/25 09:32:09.266,F:\Allsystem\Views\Vendas\Comandas\Vd_comandas.fmx=C:\Users\mts_sc\Documents\Embarcadero\Studio\Projects\Vd_comandas.fmx</Transaction>
+    <Transaction>2024/06/25 09:32:20.384,F:\Allsystem\Views\Vendas\Comandas\comandas.dproj=C:\Users\mts_sc\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+</BorlandProject>

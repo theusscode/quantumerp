@@ -1,0 +1,144 @@
+unit Unitpvd;
+
+interface
+
+uses
+  System.SysUtils,
+  System.Types,
+  System.UITypes,
+  System.Classes,
+  System.Variants,
+  FMX.Types,
+  FMX.Controls,
+  FMX.Forms,
+  FMX.Graphics,
+  FMX.Dialogs,
+  FMX.Controls.Presentation,
+  FMX.StdCtrls,
+  FMX.Objects,
+  FMX.Edit,
+  FMX.ComboEdit,
+  FMX.ListView.Types,
+  FMX.ListView.Appearances,
+  FMX.ListView.Adapters.Base,
+  FMX.ListView,
+  System.Rtti,
+  FMX.Grid.Style,
+  FMX.Grid,
+  FMX.ScrollBox,
+  System.Math.Vectors,
+  FMX.Controls3D,
+  FMX.Objects3D,
+  Data.DB,
+  FMX.Layouts,
+  FMX.ListBox,
+  FireDAC.Comp.Client,
+  FireDAC.Stan.Def,
+  FireDAC.Stan.Async,
+  FireDAC.DApt,
+  FireDAC.Stan.Param;
+
+type
+  TForm_pdv = class(TForm)
+    Pnl_top: TPanel;
+    StyleBook1: TStyleBook;
+    Panel_Client: TPanel;
+    Text1_caixa: TText;
+    Rectangle_top: TRectangle;
+    Pnl_itens: TPanel;
+    pnl_preço: TPanel;
+    Label_preco: TLabel;
+    Rec_preco: TRectangle;
+    pnl_quant: TPanel;
+    Label_quantidade: TLabel;
+    Rec_quantidade: TRectangle;
+    pnl_subtotal: TPanel;
+    Label_subtotal: TLabel;
+    Rectangle2: TRectangle;
+    pnl_total: TPanel;
+    Label_valortotal: TLabel;
+    Rec_total: TRectangle;
+    Edit2: TEdit;
+    Edit3: TEdit;
+    Label_total: TLabel;
+    Label1: TLabel;
+    Panel_prod: TPanel;
+    Label2: TLabel;
+    Rec_produto: TRectangle;
+    Edit_prod: TEdit;
+    pnl_img: TPanel;
+    Image1: TImage;
+    Panel_master: TPanel;
+    Rec_pequisa: TRectangle;
+    Edit_pesquisa: TEdit;
+    Pnl_pesqprod: TPanel;
+    Descrição: TLabel;
+    DataSource1: TDataSource;
+    Pnl_grid: TPanel;
+    ListView1: TListView;
+    pesquisar: TSpeedButton;
+    procedure pesquisarClick(Sender: TObject);
+
+  private
+    FDQuery1: TFDQuery;
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form_pdv: TForm_pdv;
+
+implementation
+
+{$R *.fmx}
+
+uses Unit1principal, Unit_login_pdv, MD_pvd;
+
+procedure TForm_pdv.pesquisarClick(Sender: TObject);
+
+var
+  ListItem: TListViewItem;
+begin
+  // Verifique se FDQuery1 está configurado corretamente
+  if not Assigned(FDQuery1) then
+  begin
+    ShowMessage('FDQuery1 não está configurado.');
+    Exit;
+  end;
+
+  // Execute a consulta se ainda não tiver sido feita
+  if not FDQuery1.Active then
+  begin
+    FDQuery1.Open;
+  end;
+
+  // Limpe os itens existentes na ListView
+  ListView1.Items.Clear;
+
+  FDQuery1.First;
+  while not FDQuery1.Eof do
+  begin
+    // Criando um novo item na TListView
+    ListItem := ListView1.Items.Add;
+
+    // Encontre e defina o texto do item de lista
+    with ListItem.Objects do
+    begin
+      try
+        TListItemText(FindObject('Codigo')).Text := FDQuery1.FieldByName('CODIGO').AsString;
+        TListItemText(FindObject('Descricao')).Text := FDQuery1.FieldByName('DESCRICAO').AsString;
+        TListItemText(FindObject('Valor')).Text := FDQuery1.FieldByName('VALOR').AsString;
+      except
+        on E: Exception do
+          ShowMessage('Erro ao definir item: ' + E.Message);
+      end;
+    end;
+
+    // Movendo para o próximo registro
+    FDQuery1.Next;
+  end;
+end;
+
+end.
+

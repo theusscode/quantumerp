@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/04/23 14:00:29.000.053,=C:\Users\mts_sc\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/04/28 14:25:58.000.008,=C:\Users\mts_sc\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/05/29 11:47:39.000.824,=C:\Users\mts_sc\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/05/29 11:48:37.000.009,C:\Users\mts_sc\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\mts_sc\Documents\Embarcadero\Studio\Projects\Unit_abrirCaixa.pas</Transaction>
+    <Transaction>2024/05/29 11:48:37.000.009,C:\Users\mts_sc\Documents\Embarcadero\Studio\Projects\Unit1.fmx=C:\Users\mts_sc\Documents\Embarcadero\Studio\Projects\Unit_abrirCaixa.fmx</Transaction>
+    <Transaction>2024/05/29 11:51:27.000.113,C:\Users\mts_sc\Documents\Embarcadero\Studio\Projects\Unit_abrirCaixa.fmx=F:\Allsystem\Views\Financeiro\Abrir_caixa\Unit_abrirCaixa.fmx</Transaction>
+    <Transaction>2024/05/29 11:51:27.000.113,C:\Users\mts_sc\Documents\Embarcadero\Studio\Projects\Unit_abrirCaixa.pas=F:\Allsystem\Views\Financeiro\Abrir_caixa\Unit_abrirCaixa.pas</Transaction>
+    <Transaction>2024/05/29 11:52:01.000.894,C:\Users\mts_sc\Documents\Embarcadero\Studio\Projects\Project1.dproj=F:\Allsystem\Views\Financeiro\Abrir_caixa\AbrirCaixa.dproj</Transaction>
+    <Transaction>2024/05/29 12:06:47.945,=F:\Allsystem\Views\Unit1princinpal.pas</Transaction>
+    <Transaction>2024/05/29 12:07:08.052,=F:\Allsystem\Views\Unit_login_pdv.pas</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+</BorlandProject>

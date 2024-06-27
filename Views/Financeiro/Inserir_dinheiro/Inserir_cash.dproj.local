@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/04/23 14:00:29.000.053,=C:\Users\mts_sc\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/04/28 14:25:58.000.008,=C:\Users\mts_sc\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/05/29 18:08:19.000.961,=C:\Users\mts_sc\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/05/29 18:09:55.000.551,C:\Users\mts_sc\Documents\Embarcadero\Studio\Projects\Unit1.fmx=F:\Allsystem\Views\Financeiro\Inserir_dinheiro\Inseri_dinheiro.fmx</Transaction>
+    <Transaction>2024/05/29 18:09:55.000.551,C:\Users\mts_sc\Documents\Embarcadero\Studio\Projects\Unit1.pas=F:\Allsystem\Views\Financeiro\Inserir_dinheiro\Inseri_dinheiro.pas</Transaction>
+    <Transaction>2024/05/29 18:10:25.000.625,C:\Users\mts_sc\Documents\Embarcadero\Studio\Projects\Project1.dproj=F:\Allsystem\Views\Financeiro\Inserir_dinheiro\Inserir_cash.dproj</Transaction>
+    <Transaction>2024/05/29 18:10:42.000.847,F:\Allsystem\Views\Financeiro\Inserir_dinheiro\Inseri_dinheiro.fmx=F:\Allsystem\Views\Financeiro\Inserir_dinheiro\Inserir_dinheiro.fmx</Transaction>
+    <Transaction>2024/05/29 18:10:42.000.847,F:\Allsystem\Views\Financeiro\Inserir_dinheiro\Inseri_dinheiro.pas=F:\Allsystem\Views\Financeiro\Inserir_dinheiro\Inserir_dinheiro.pas</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+</BorlandProject>

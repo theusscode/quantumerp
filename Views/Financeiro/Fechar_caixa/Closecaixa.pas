@@ -1,0 +1,69 @@
+unit Closecaixa;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.StdCtrls,
+  FMX.Controls.Presentation, FMX.Edit, FMX.Objects, FMX.ListBox, FMX.Layouts;
+
+type
+  TClose_Caixa = class(TForm)
+    rec_itens: TRectangle;
+    rec_concluir: TRectangle;
+    SpeedButton2: TSpeedButton;
+    rec_cancelar: TRectangle;
+    SpeedButton3: TSpeedButton;
+    Valor: TLabel;
+    pnl_master: TPanel;
+    StyleBook1: TStyleBook;
+    pnl_right: TPanel;
+    content: TRectangle;
+    recline: TRectangle;
+    rec_valor: TRectangle;
+    edt_valor: TEdit;
+    rec_voltar: TRectangle;
+    SpeedButton1: TSpeedButton;
+    closecheckout: TLabel;
+    linetop: TRectangle;
+    ListBox1: TListBox;
+    ListBoxHeader1: TListBoxHeader;
+    fm_pagar: TLabel;
+    valor0: TLabel;
+    ListBoxItem1: TListBoxItem;
+    Label1: TLabel;
+    ListBoxHeader3: TListBoxHeader;
+    Label2: TLabel;
+    ListBoxHeader2: TListBoxHeader;
+    Label3: TLabel;
+    ListBoxHeader4: TListBoxHeader;
+    Label7: TLabel;
+    ListBoxItem3: TListBoxItem;
+    ListBoxItem4: TListBoxItem;
+    ListBoxItem5: TListBoxItem;
+    ListBoxItem6: TListBoxItem;
+    ListBoxItem7: TListBoxItem;
+    ListBoxItem8: TListBoxItem;
+    ListBoxItem9: TListBoxItem;
+    ListBoxItem10: TListBoxItem;
+    ListBoxItem12: TListBoxItem;
+    ListBoxItem13: TListBoxItem;
+    ListBoxItem2: TListBoxItem;
+    ListBoxHeader5: TListBoxHeader;
+    Label4: TLabel;
+    Image1: TImage;
+    Rectangle1: TRectangle;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Close_Caixa: TClose_Caixa;
+
+implementation
+
+{$R *.fmx}
+
+end.

@@ -1,0 +1,14 @@
+program Closecaixa;
+
+uses
+  System.StartUpCopy,
+  FMX.Forms,
+  FecharCaixa in '..\FecharCaixa.pas' {Form_closecaixa};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TForm_closecaixa, Form_closecaixa);
+  Application.Run;
+end.

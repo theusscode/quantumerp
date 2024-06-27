@@ -1,0 +1,125 @@
+unit Unitpvd;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants, FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
+  FMX.Controls.Presentation, FMX.StdCtrls, FMX.Objects, FMX.Edit, FMX.ComboEdit, FMX.ListView.Types, FMX.ListView.Appearances, FMX.ListView.Adapters.Base,
+  FMX.ListView, System.Rtti, FMX.Grid.Style, FMX.Grid, FMX.ScrollBox, System.Math.Vectors, FMX.Controls3D, FMX.Objects3D, Data.DB, FMX.Layouts, FMX.ListBox,
+  FireDAC.Comp.Client, FireDAC.Stan.Def, FireDAC.Stan.Async, FireDAC.DApt, FireDAC.Stan.Param, MD_pvd;
+
+type
+  TForm_pdv = class(TForm)
+    Pnl_top: TPanel;
+    StyleBook1: TStyleBook;
+    Panel_Client: TPanel;
+    Text1_caixa: TText;
+    Rectangle_top: TRectangle;
+    Pnl_itens: TPanel;
+    pnl_preço: TPanel;
+    Label_preco: TLabel;
+    Rec_preco: TRectangle;
+    pnl_quant: TPanel;
+    Label_quantidade: TLabel;
+    Rec_quantidade: TRectangle;
+    pnl_subtotal: TPanel;
+    Label_subtotal: TLabel;
+    Rectangle2: TRectangle;
+    pnl_total: TPanel;
+    Label_valortotal: TLabel;
+    Rec_total: TRectangle;
+    Edit2: TEdit;
+    Edit3: TEdit;
+    Label_total: TLabel;
+    Label1: TLabel;
+    Panel_prod: TPanel;
+    Label2: TLabel;
+    Rec_produto: TRectangle;
+    Edit_prod: TEdit;
+    pnl_img: TPanel;
+    Image1: TImage;
+    Panel_master: TPanel;
+    Rec_pequisa: TRectangle;
+    Edit_pesquisa: TEdit;
+    Pnl_pesqprod: TPanel;
+    Descrição: TLabel;
+    DataSource1: TDataSource;
+    Pnl_grid: TPanel;
+    ListView1: TListView;
+    procedure SpeedButton1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form_pdv: TForm_pdv;
+
+implementation
+
+{$R *.fmx}
+
+procedure TForm_pdv.SpeedButton1Click(Sender: TObject);
+var
+  ListItem: TListViewItem;
+  SearchText: string;
+begin
+  // Verifique se o DataModule está configurado corretamente
+  if not Assigned(UDM) then
+  begin
+    ShowMessage('DataModule não está configurado.');
+    Exit;
+  end;
+
+  // Conecte ao banco de dados se ainda não estiver conectado
+  if not UDM.FDConnection1.Connected then
+  begin
+    UDM.FDConnection1.Connected := True;
+  end;
+
+  // Obtenha o texto de pesquisa
+  SearchText := Edit_pesquisa.Text;
+
+  // Defina a consulta SQL no FDQuery1 do DataModule
+  with UDM.FDQuery1 do
+  begin
+    Close;
+    SQL.Text := 'SELECT CODIGO, NOME, DESCRICAO, QUANTIDADE, PRECO_UNITARIO FROM produtos WHERE DESCRICAO LIKE :Descricao';
+    Params.ParamByName('Descricao').AsString := '%' + SearchText + '%';
+
+    // Execute a consulta
+    Open;
+  end;
+
+  // Limpe os itens existentes na ListView
+  ListView1.Items.Clear;
+
+  UDM.FDQuery1.First;
+  while not UDM.FDQuery1.Eof do
+  begin
+    // Criando um novo item na TListView
+    ListItem := ListView1.Items.Add;
+
+    // Encontre e defina o texto do item de lista
+    with ListItem.Objects do
+    begin
+      try
+        TListItemText(FindObject('Codigo')).Text := UDM.FDQuery1.FieldByName('CODIGO').AsString;
+        TListItemText(FindObject('Nome')).Text := UDM.FDQuery1.FieldByName('NOME').AsString;
+        TListItemText(FindObject('Descricao')).Text := UDM.FDQuery1.FieldByName('DESCRICAO').AsString;
+        TListItemText(FindObject('Quantidade')).Text := UDM.FDQuery1.FieldByName('QUANTIDADE').AsString;
+        TListItemText(FindObject('Preco_Unitario')).Text := UDM.FDQuery1.FieldByName('PRECO_UNITARIO').AsString;
+      except
+        on E: Exception do
+          ShowMessage('Erro ao definir item: ' + E.Message);
+      end;
+    end;
+
+    // Movendo para o próximo registro
+    UDM.FDQuery1.Next;
+  end;
+end;
+
+end.
+

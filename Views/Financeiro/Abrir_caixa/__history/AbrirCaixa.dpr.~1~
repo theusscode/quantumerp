@@ -1,0 +1,14 @@
+program AbrirCaixa;
+
+uses
+  System.StartUpCopy,
+  FMX.Forms,
+  Unit_abrirCaixa in 'Unit_abrirCaixa.pas' {Form_AbrirCaixa};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TForm_AbrirCaixa, Form_AbrirCaixa);
+  Application.Run;
+end.

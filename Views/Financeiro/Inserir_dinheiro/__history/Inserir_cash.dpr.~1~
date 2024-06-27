@@ -1,0 +1,14 @@
+program Inserir_cash;
+
+uses
+  System.StartUpCopy,
+  FMX.Forms,
+  Inseri_dinheiro in 'Inseri_dinheiro.pas' {Form1};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.

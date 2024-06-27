@@ -1,0 +1,76 @@
+object FormAbreCaixa: TFormAbreCaixa
+  Left = 0
+  Top = 0
+  ClientHeight = 400
+  ClientWidth = 622
+  StyleBook = StyleBook1
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Pnl_master: TPanel
+    Align = Contents
+    Size.Width = 622.000000000000000000
+    Size.Height = 400.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object Pnl_fundo: TPanel
+      Align = Contents
+      Size.Width = 622.000000000000000000
+      Size.Height = 400.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'Pnl_masterStyle1'
+      TabOrder = 1
+      object Text_abrircaixa: TLabel
+        Align = Horizontal
+        StyledSettings = [Family]
+        Position.Y = 24.000000000000000000
+        Size.Width = 622.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 20.000000000000000000
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Center
+        Text = 'ABRIR CAIXA'
+        TabOrder = 0
+      end
+      object linetop: TRectangle
+        Align = Horizontal
+        Fill.Color = claWhite
+        Position.Y = 65.000000000000000000
+        Size.Width = 622.000000000000000000
+        Size.Height = 1.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+      end
+      object Rectangle1: TRectangle
+        Align = Horizontal
+        Fill.Color = claWhite
+        Position.Y = 177.000000000000000000
+        Size.Width = 622.000000000000000000
+        Size.Height = 1.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+      end
+    end
+  end
+  object StyleBook1: TStyleBook
+    Styles = <
+      item
+      end
+      item
+        Platform = 'Windows 10 Desktop'
+        ResourcesBin = {
+          464D585F5354594C4520322E35010610506E6C5F6D61737465725374796C6531
+          03B00000545046300A5452656374616E676C6500095374796C654E616D650610
+          506E6C5F6D61737465725374796C653105416C69676E070643656E7465720A46
+          696C6C2E436F6C6F7207097846463030393845440748697454657374080A5369
+          7A652E576964746805000000000000408808400B53697A652E48656967687405
+          00000000000000BA07401453697A652E506C6174666F726D44656661756C7408
+          0B5374726F6B652E4B696E6407044E6F6E650000}
+      end>
+    Left = 16
+    Top = 16
+  end
+end

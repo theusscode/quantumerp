@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/04/23 14:00:29.000.053,=C:\Users\mts_sc\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/04/28 14:25:58.000.008,=C:\Users\mts_sc\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/05/30 12:02:30.000.851,=C:\Users\mts_sc\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/05/30 12:04:26.000.697,C:\Users\mts_sc\Documents\Embarcadero\Studio\Projects\Unit1.pas=F:\Allsystem\Views\Financeiro\Tranferir_dinheiro\TransferirCash.pas</Transaction>
+    <Transaction>2024/05/30 12:04:26.000.697,C:\Users\mts_sc\Documents\Embarcadero\Studio\Projects\Unit1.fmx=F:\Allsystem\Views\Financeiro\Tranferir_dinheiro\TransferirCash.fmx</Transaction>
+    <Transaction>2024/05/30 12:05:18.000.084,C:\Users\mts_sc\Documents\Embarcadero\Studio\Projects\Project1.dproj=F:\Allsystem\Views\Financeiro\Tranferir_dinheiro\TransfCash.dproj</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+</BorlandProject>
